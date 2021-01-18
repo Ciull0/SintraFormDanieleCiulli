@@ -1,0 +1,18 @@
+.datamissing{
+    border: 2px solid grey;
+}
+.datagood{
+    border: 2px solid green !important;
+}
+.databad{
+    border: 2px solid red;
+}
+.tickgood{
+    color: green;
+}
+.tickmissing{
+    color: gray;
+}
+.checklist{
+    margin-right: 5px;
+}

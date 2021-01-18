@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="validation.css" rel="stylesheet">
+    <script type="text/javascript" src="validation.js"></script>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Form Validation Daniele Ciulli</h1>
+                <form id="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">First Name   <bold id="tickSurname">✓</bold></label>
+                        <input oninput="surnameCheck()"onchange="" id="surname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name   <bold id="tickName">✓</bold></label>
+                        <input oninput="nameCheck()"id="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email   <bold id="tickEmail">✓</bold></label>
+                      <input oninput="emailCheck()" id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Address   <bold id="tickAddress">✓</bold></label>
+                        <input oninput="addressCheck()" id="address" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password   <bold id="tickPassword">✓</bold></label>
+                      <input oninput="pswCheck()" id="password" type="password" class="form-control" placeholder="Enter Password" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off>
+                        <p><bold class="checklist" id="minChar">✓</bold>Minimo 10 Caratteri</li>
+                        <p><bold class="checklist" id="numChar">✓</bold>At Least a Numeric Character</li>
+                        <p><bold class="checklist" id="specChar">✓</bold>At Least 3 Special Character</li>
+                        <p><bold class="checklist" id="notSpace">✓</bold>Not Containing Space Character</li>
+                        <p><bold class="checklist" id="namePresent">✓</bold>Not Containing Name or Surname</li>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password Confirmation   <bold id="tickCheckPassword">✓</bold></label>
+                        <input oninput="pswCheckCheck()" id="checkpassword" type="password" class="form-control" placeholder="Confirm Password" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off>
+                        <p><bold class="checklist" id="corrisponds">✓</bold>Password And Confirmation Must Corrispond</li>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
