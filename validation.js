@@ -10,8 +10,10 @@ function makeElementGood(element,tickElement){
         element.innerText ="✓";
         return;
     }
+
     element.classList.remove("databad");
     element.classList.add("datagood");
+
     tickElement.classList.add("tickgood");
     tickElement.innerText ="✓";
 }
@@ -22,8 +24,10 @@ function makeElementBad(element,tickElement){
         element.innerText="⚠";
         return;
     }
+
     element.classList.remove("datagood");
     element.classList.add("databad");
+
     tickElement.classList.remove("tickgood");
     tickElement.innerText="⚠";
 }
